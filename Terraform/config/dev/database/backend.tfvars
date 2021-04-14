@@ -1,0 +1,5 @@
+bucket         = ""
+dynamodb_table = "state"
+key            = "us-east-1/dev/db.tfstate"
+region         = "us-east-1"
+encrypt        = "true"
