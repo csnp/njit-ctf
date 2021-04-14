@@ -1,6 +1,8 @@
 # CTF Automation
 
-This repo houses the CTFd app, Terraform files to deploy, and some automation to glue everything together
+This repo houses the CTFd app, Terraform files to deploy, and some automation to glue everything together. This has been scrubbed so you will need to add in your own Terraform values and AWS account ID in the makefile
+
+CTFd has been modified so config.py grabs secrets from AWS parameter store directly. It is possible to just wrap CTFd in a script to inject the params into the environment so you don't need to clone the whole repo so feel free to make a PR for that.
 
 ## Requirements
 
@@ -8,6 +10,7 @@ This repo houses the CTFd app, Terraform files to deploy, and some automation to
 * git
 * Docker
 * bash or zsh
+* AWS
 
 ## Commands
 
